@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************/
+/*******common css*************/
+
+
+/******* fonts *********/
+@import url('../fonts/stylesheet_fonts.css');
+/******* fonts *********/
+
+
+body{
+    font-family: 'Century Gothic' !important;
+}
+
+
+
+.gray{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+        
+   
+}
+
+.zoom{
+
+   transform: scale(1.07);
+}
+
+
+.margin_auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.no_padding{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.no_padd_left{
+    padding-left: 0px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+textarea, input[type="text"] {
+    -webkit-appearance: none;
+}
+
+:focus { outline: thin dotted; outline: 0px auto -webkit-focus-ring-color; outline-offset: 0px !important; }
+button:focus { outline: thin dotted; outline: 0px auto -webkit-focus-ring-color; outline-offset: 0px !important; }
+
+/* Remove inner shadow from inputs on mobile iOS */
+textarea, input[type="text"] {
+-webkit-appearance: none;
+}
+
+textarea, input[type="password"] { -webkit-appearance: none; }
+
+select.form-control {
+  -webkit-appearance: none;
+  background: url(../images/down-arrow.png) no-repeat center right;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+/*******common css*************/
+/******************************/
+
+
+
+
+/*****************************/
+/*********header**************/
+
+.top_section{
+    background-image:url('../images/top_bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    padding-bottom: 80px;
+}
+
+.top_logo{
+    padding-top: 40px;
+}
+
+
+/*****************************/
+/*********header**************/
+
+
+
+
+
+/*****************************/
+/*********menu**************/
+
+
+
+
+/*****************************/
+/*********menu**************/
+
+
+
+
+
+/*****************************/
+/*********body**************/
+
+
+.heading{
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+}
+.content_box{
+    position: relative;
+    margin-top: -100px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 0px 0px 29px 6px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 29px 6px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 29px 6px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    z-index: 999999;
+    background-color: #ffffff;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000000;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.custom_btn {
+    font-weight: 900;
+    width: 100%;
+    padding: 5px 15px;
+    height: 40px;
+    background-color: #f7a41c;
+    border: 1px solid #f7a41c;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.custom_btn:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+/*****************************/
+/*********body**************/
+
+
+/* Tables */
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 11px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-bottom: 2px solid #f7a41c;
+}
+
+.table>thead>tr>th {
+    vertical-align: middle;
+    color: #001342;
+    border-bottom: 2px solid #001342;
+}
+
+.table>tbody>tr{
+  -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.table>tbody>tr:hover{
+  background-color: #eeeeee;
+}
+
+
+/*****************************/
+/*********footer**************/
+
+.footer_row{
+    background-color: #ffffff;
+}
+
+
+/*****************************/
+/*********footer**************/
+
+
+/**********=========================================********************/
+/**********===============SCROLL TOP=================********************/
+/**********=========================================********************/
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #ffffff;
+    color: #2a3476;
+    width: 32px;
+    height: 50px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-radius: 0px;
+    border: 1px solid #2a3476;
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+    /*border-bottom-right-radius: 10px;*/
+    /*border-bottom-left-radius: 10px;*/
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    animation: bounce_1 1s infinite alternate;
+    -webkit-animation: bounce_1 1s infinite alternate;
+}
+
+@keyframes bounce_1 {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes bounce_1 {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.scroll-top-wrapper:hover {
+    background-color: #fbad18;
+    color: #ffffff;
+    border: 1px solid #fbad18;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
+
+/**********=========================================********************/
+/**********===============SCROLL TOP=================********************/
+/**********=========================================********************/
+
+/*========================================================================*/
+/*========================================================================*/
+/*===================DEVELOPMENT - DUMIDU WIMALARATHNA====================*/
+/*========================================================================*/
+/*========================================================================*/
